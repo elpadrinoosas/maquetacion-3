@@ -1,0 +1,210 @@
+/* Generales */
+
+*{
+    font-family: helvetica;
+    line-height: 1.5;
+}
+.turquesino{
+    color: #1e6987;
+} 
+.blanco{
+    color: white;
+}
+.coolgrey{
+    color: #839ba7;
+}  
+.centrado{
+    text-align: center;
+}
+.contenedor{
+    width: 1200px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.bold{
+    font-weight: 700;
+}
+.color-blanco{
+    color: #ffffff;
+}
+.baseline{
+    align-items: baseline;
+}
+[class^="banner-"]{
+    height: 535px;
+}
+/* FIN */
+/* ENCABEZADO */
+.titulo-eslogan{
+    width: 1200px;
+}
+.superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.cabeza{
+    display: flex;
+    justify-content: center;
+}
+.menu-principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item-navegacion{
+    color: #55a3b7;
+    padding: 5px 20px;
+}
+.banner-1{
+    background-image: url(../fondos/banner-1.jpeg);
+    height: 640px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: left;
+}
+.eslogan{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+/* SECTION QUIENES SOMOS */
+.quienes-somos{
+    justify-content: space-between;
+}
+.banner-2{
+    background-image: url(../fondos/banner-2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.lado-img{
+    justify-content: center;
+    width: 600px;
+    padding: 30px;
+    height: 535px;
+}
+.izquierda{
+    align-items: flex-end;
+    width: 50vw;
+    height: 535px;
+}
+/***FIN DE QUIENES SOMOS ***/
+
+/* SECTION SERVICIOS */
+.banner-3{
+    background-image: url(../fondos/banner-3.jpg);
+    align-items: center;
+    justify-content: center;
+}
+.subtitulo-blanco{
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.semititulo{
+    font-weight: 400;
+}
+.todos-servicios{
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-content: space-around;
+    height: 300px;
+}
+.div-servicios{
+    
+    justify-content: center;
+}
+.servicios-item{
+    width: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/*** FIN DE SECCIÓN SERVICIOS***/
+
+/* SECCIÓN GRUPO LA RIAZA */
+.banner-4{
+    background-image: url(../fondos/banner-4.jpg);
+    background-size: cover;
+    width: 50vw;
+}
+/*** FIN DE SECCIÓN LA RIAZA ***/
+
+/* SECCIÓN ESCRIBENOS */
+.banner-5{
+    background-image: url(../fondos/banner-5.jpg)  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.escribenos .flex-row{
+    justify-content: space-between;
+    width: 1200px;
+}
+.escribenos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.escribenos-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    justify-content: space-around;
+    height: 130px;
+}
+/***FIN DE SECCIÓN ESCRIBENOS*/
+
+/* INICIO DE FOOTER */
+footer{
+    background-color: #1e6987;
+    align-items: center;
+}
+footer>.flex-row{
+    width: 1200px;
+    margin-left: 190px;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e6987;
+    height: 50px;
+
+}
+.para-arriba{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -2px;
+    border-radius: 3px;
+    right: 100px;
+    background-color: #3e4557;
+}
+.subtitulo{
+    margin-bottom: 40px;
+    font-weight: 900;
+    color: #3e4557;
+    text-transform: uppercase;
+}
+.redes-sociales>a>img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    justify-content: space-between;
+}

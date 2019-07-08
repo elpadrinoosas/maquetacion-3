@@ -1,0 +1,178 @@
+// GENERALES
+$footer: #1e6987;
+$color_font_subtitulos: #3e4557;
+$color_font_semipeques:#55a3b7;
+$color_font_peques: #839ba7;
+$header_menu_item: #479bad;
+$subtitulos_font_weight: 600;
+*{
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    margin: 0px;
+}   
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+}
+[class^="contenedor"]{
+    width: 1200px;
+}
+// HEADER
+.contenedor_header{
+    width: 1200px;
+    @include flex_row;
+    align-items: center;
+    justify-content: space-between;
+    nav{
+        width: 50%;
+    }
+}
+ul, li, a{
+    text-decoration: none;
+    padding: 0px;
+    list-style: none;
+}
+// HEADER
+.header{
+    // position: fixed;
+    // top: 0px;
+    // height: 80px;
+    // background-color: #f9f9f9;
+    // width: 100%;
+    // box-shadow: 1px 1px 1px #f9f9f9;    
+    @include flex_row;
+    justify-content: center;
+}
+.header_menu{
+    @include flex_row;
+    justify-content: space-between;
+    width: 100%;
+}
+.item_menu{
+    color: $header_menu_item;
+}
+// PRIMERA PARTE 
+.primera_parte{
+    background-image: url(../fondos/banner-1.jpeg);
+    height: 500px;
+    width: 100%;
+    @include flex_row;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -250px;
+}
+.contenedor{
+    h1, p{
+        color: #ffffff
+    }
+}
+// SECCION SOMOS
+.somos{
+    @include flex_row;
+    .lado_mitad_bg{
+        background-image: url(../fondos/banner-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+[class^="lado_mitad"]{
+    width: 50vw;
+    height: 450px;
+}
+.lado_mitad{
+    @include flex_row;
+    justify-content: flex-end;
+}
+.lado_mitad_contenido{
+    width: 600px;
+}
+// SERVICOS
+.servicios{
+    background-image: url(../fondos/banner-3.jpg);
+    height: 500px;
+    @include flex_row;
+    justify-content: center;
+    .contenedor{
+        .servicios_wrapper{
+            @include flex_row;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+        }
+    }
+}
+.servicios_item{
+    width: 400px;
+}
+// RIAZA
+.riaza{
+    @include flex_row;
+    .lado_mitad_bg{
+        background-image: url(../fondos/banner-4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+}
+.escribenos{
+    background-image: url(../fondos/banner-5.jpg);
+    @include flex_row;
+    justify-content: center;
+}
+.contenedor_items_escribenos{
+    @include flex_row;
+    justify-content: space-between;
+
+}
+// FOOTER
+.footer{
+    background-color: $footer;
+    @include flex_row;
+    justify-content: center;
+    .contenedor{
+        @include flex_row;
+        justify-content: space-between;
+        .footer_redes_sociales{
+            @include flex_row;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            img {
+                width: 20px ;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.up{
+    background-color: $color_font_subtitulos;
+    width: 48px;
+    position: fixed;
+    right: 15px;
+    bottom: -3px;
+    height: 35px;
+    @include flex_row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+
+    &:hover{
+        background-color: $color_font_semipeques;
+    }
+    img {
+        width: 15px;
+    }
+}
+@for $i from 1 through 20 {
+    .for_prueba{
+        width: $i*5;
+        background-color: #3e4557;
+        height: $i*5;
+    }
+}
